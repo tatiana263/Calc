@@ -1,12 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clonar') {
-            steps {
-                git 'https://github.com/tatiana263/Calc.git'
-            }
-        }
 
         stage('Compilar') {
             steps {
@@ -21,3 +15,5 @@ pipeline {
         }
     }
 }
+
+
